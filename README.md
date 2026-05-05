@@ -23,7 +23,7 @@
 <h2>📌 Requirements</h2>
 <ul data-spread="false">
   <li>Shopify store (Online Store 2.0 theme like Dawn)</li>
-  <li>Shopify CLI (for function deployment)</li>
+  <li>Shopify CLI (for function deployment, not important for simple instalation)</li>
 </ul>
 <div contenteditable="false">
   <hr />
@@ -81,4 +81,4 @@
 </div>
 <h2>&#9888;&#65039; Important</h2>
 <p>Frontend validation can be bypassed.<br />
-    <strong>Shopify Function is required for real enforcement.</strong></p>
+    <strong>Shopify Function is required for real enforcement but for start you can leave.</strong></p>
