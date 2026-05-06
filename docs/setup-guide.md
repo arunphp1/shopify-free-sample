@@ -24,7 +24,7 @@
 <ul data-spread="false">
   <li>Add button in main-product.liquid</li>
   <li>Add validation in main-cart-items.liquid</li>
-  <li>Update global.js</li>
+  <li>Update global.js or upload sample.js</li>
 </ul>
 
 <div contenteditable="false">
