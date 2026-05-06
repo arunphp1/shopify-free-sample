@@ -1,1 +1,22 @@
 
+{% comment %}  -------
+after buy button {%- render 'buy-buttons', ------------- -%}
+
+add this        ----{% endcomment %}
+
+
+
+{% assign sample_product = product.metafields.custom.sample_product.value %}
+
+{% if sample_product %}
+<h3>Not sure? Try a free sample first!</h3>
+  <button
+    type="button"
+    id="get-sample-btn"
+    class="button button--secondary"
+    data-variant-id="{{ sample_product.variants.first.id }}"
+    style="margin-top:10px;"
+  >
+    Get A Free Sample
+  </button>
+{% endif %}
