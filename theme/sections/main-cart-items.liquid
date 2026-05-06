@@ -1,0 +1,23 @@
+{% assign has_sample = false %}
+{% assign has_paid_product = false %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'sample-product' %}
+    {% assign has_sample = true %}
+  {% else %}
+    {% assign has_paid_product = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_sample and has_paid_product == false %}
+  <div style="color:red; margin-bottom:10px;">
+    Sample product can’t be bought alone
+  </div>
+
+  <style>
+    [name="checkout"] {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  </style>
+{% endif %}
